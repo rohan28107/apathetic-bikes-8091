@@ -1,25 +1,23 @@
-let sportsData=[
+let explainerdata=[
     {
-        id:3,
-        image_url:
-        "https://images.firstpost.com/wp-content/uploads/2022/09/Sunil-Chhetri.jpg?impolicy=website&width=640&height=363",
-        name:"FIFA releases 'Captain Fantastic' on Sunil Chhetri's untold story of tremendous feats",
-        mainPara:"As a result of this exclusive series, Sunil Chhetri will unquestionably be the point of contact while discussing Indian football worldwide.",
-        linkPage:"sports.html",
-        para2:"Sunil Chhetri, Indian national football team captain’s, legacy has acquired new heights after FIFA created a special series about him in recognition of his fantastic career. The series named ‘Captain Fantastic’ is available on FIFA+ and it has three episodes.",
-        para3:"Chhetri’s participation in a series by the international football’s governing body is unique considering he represents a country that has not yet competed in the FIFA World Cup.",
-        para4:"However, Chhetri’s goal scoring prowess has propelled him to stand alongside football’s greatest ever – Cristiano Ronaldo and Lionel Messi. The 37-year-old is currently the third-highest goal scorer in international football among active players. Ronaldo tops the list with 117 goals, and Chhetri is only six goals behind Messi’s 90 goal tally. During his distinguished career, Chhetri has played 131 games for the Indian squad and netted 84 goals.",
-        para5:"https://pbs.twimg.com/media/FdqXN1HWIAMJ3zE?format=jpg&name=small",
-        // para6:"https://twitter.com/FIFAWorldCup/status/1574746035297177600?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1574746035297177600%7Ctwgr%5E0f0d8cf98adc897cdda5bd1d42a284e0d213efc8%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.firstpost.com%2Fsports%2Ffootball-news%2Ffifa-releases-captain-fantastic-on-sunil-chhetris-untold-story-of-tremendous-feats-11346541.html",
-        para7:"FIFA+ is a content initiative by the global body and this series is a component of that project. As a result, Chhetri will unquestionably be the point of focus while discussing Indian football worldwide. Some of the scenes were filmed in Bangalore, where Chhetri currently resides, in addition to Delhi, where Chhetri’s parents live and where he grew up.",
-        para8:"The first episode of the series travels back to Chhetri’s early days as India’s talismanic captain. This fly-on-the-wall saga uncovers unseen tales of the captain, from his precocious pre-teen anguish to the early sparks of his romance with his future wife — all leading up to his India debut at the age of 20.",
-        para9:"The second episode of the series follows Chhetri beginning to excel for the national team and gradually establishing himself as a mainstay.",
-        para10:"Chhetri achieves the pinnacle of both his professional and personal life in the third episode of the show. As Chhetri’s fame and on-field performances rise, awards have mounted up and records have been broken.",
-    },
+        id:4,
+        image_url:"https://images.firstpost.com/wp-content/uploads/2022/09/Red_carpet_at_81st_Academy_Awards_in_Kodak_Theatre.jpg?impolicy=website&width=640&height=363",
+        name:"And the Oscar doesn’t go to... Why is Russia boycotting the Academy Awards?",
+        mainPara:"Amid growing tensions with Washington over the Ukraine war, Russia said it will not submit entries to the Oscars. This is the first time the country has boycotted the coveted film awards since the fall of the Soviet Union",
+        linkPage:"./explainer.html",
+        para2:"Russia’s isolation from the world continues as the war in Ukraine reaches a critical point. Its ties with the United States, which has slapped the Kremlin with sanctions after strict sanctions since the February invasion, have plummeted. Now Russia has announced that it will not be submitting a film for the upcoming 2023 international Oscars race.",
+        para3:"This is the first time that the country has boycotted the coveted film awards since the fall of the Soviet Union.",
+        para4:"Let’s take a closer look.",
+        para5:"The boycott was announced amid growing tensions between Washington and Moscow following Russia’s invasion of Ukraine on 24 February this year.",
+        para6:"According to AFP, the boycott was announced by the Russian film academy on Monday evening. The Kremlin recently accused the United States administration of having a direct role in the Ukraine war and has threatened to cut all ties with the country, according to a report by Variety.",
+        para7:"The Russian academy said in a statement, “The presidium of the Film Academy of Russia has decided not to nominate a national film for the Oscars award of the American Academy of Motion Picture Arts and Sciences.”",
+        para8:"The country’s boycott is not limited to the Oscars.Recently, Russia imposed personal sanctions on 25 Americans including actors Sean Penn and Ben Stiller as a response to US sanctions against Russians amid the war.",
+        para9:"Both Penn and Stiller have been vocal critics of Russia’s invasion of Ukraine. According to a report by NPR, Sean is an activist involved in relief work while Ben is a goodwill ambassador for the UN High Commissioner for Refugees.",
+        para10:"https://www.firstpost.com/wp-content/uploads/2022/03/AP22080759531169-1.jpg?impolicy=website&width=640&height=363",
+    }
 ];
 
-
-sportsData.forEach(function (el){
+explainerdata.forEach(function (el){
     let card =document.createElement("div");
 
     let newsImg=document.createElement("img");
@@ -40,8 +38,8 @@ sportsData.forEach(function (el){
     let paras4=document.createElement("p");
     paras4.innerText=el.para4;
 
-    let paras5=document.createElement("img");
-    paras5.src=el.para5;
+    let paras5=document.createElement("p");
+    paras5.innerText=el.para5;
 
     let paras6=document.createElement("p");
     paras6.innerText=el.para6;
@@ -55,17 +53,17 @@ sportsData.forEach(function (el){
     let paras9=document.createElement("p");
     paras9.innerText=el.para9;
 
-    let paras10=document.createElement("p");
-    paras10.innerText=el.para10;
+    let paras10=document.createElement("img");
+    paras10.src=el.para10;
 
-    let paras11=document.createElement("p");
-    paras11.innerText=el.para11;
+    // let paras11=document.createElement("p");
+    // paras11.innerText=el.para11;
     
-    let paras12=document.createElement("p");
-    paras12.innerText=el.para12;
+    // let paras12=document.createElement("p");
+    // paras12.innerText=el.para12;
 
-    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras5, paras7, paras8, paras9, paras10);
-    document.querySelector("#sports-left").append(card);
+    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras5, paras6, paras10, paras7, paras8, paras9);
+    document.querySelector("#explainer-left").append(card);
       
 });
 
@@ -151,7 +149,7 @@ datas2.forEach(function (el){
     mainParas.innerText=el.mainPara;
 
     card2.append(heading, mainParas);
-    document.querySelector("#sports-right").append(card2);
+    document.querySelector("#explainer-right").append(card2);
     
 });
 

@@ -37,17 +37,14 @@ entertainmentData.forEach(function (el){
     let paras3=document.createElement("p");
     paras3.innerText=el.para3;
 
-    let paras4=document.createElement("p");
-    paras4.innerText=el.para4;
-
-    let paras5=document.createElement("p");
-    paras5.innerText=el.para5;
+    let paras4=document.createElement("img");
+    paras4.src=el.para4;
 
     let paras6=document.createElement("p");
     paras6.innerText=el.para6;
 
-    let paras7=document.createElement("p");
-    paras7.innerText=el.para7;
+    let paras7=document.createElement("img");
+    paras7.src=el.para7;
 
     let paras8=document.createElement("p");
     paras8.innerText=el.para8;
@@ -64,7 +61,7 @@ entertainmentData.forEach(function (el){
     let paras12=document.createElement("p");
     paras12.innerText=el.para12;
 
-    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras5, paras6, paras7, paras8, paras9, paras10, paras11, paras12);
+    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras6, paras7, paras8, paras9, paras10, paras11, paras12);
     document.querySelector("#entertainment-left").append(card);
       
 });
@@ -95,7 +92,7 @@ let datas2=[
         "https://images.firstpost.com/wp-content/uploads/2022/09/Sunil-Chhetri.jpg?impolicy=website&width=640&height=363",
         name:"FIFA releases 'Captain Fantastic' on Sunil Chhetri's untold story of tremendous feats",
         mainPara:"As a result of this exclusive series, Sunil Chhetri will unquestionably be the point of contact while discussing Indian football worldwide.",
-        linkPage:"",
+        linkPage:"./sports.html",
         para2:"Sunil Chhetri, Indian national football team captain’s, legacy has acquired new heights after FIFA created a special series about him in recognition of his fantastic career. The series named ‘Captain Fantastic’ is available on FIFA+ and it has three episodes.",
         para3:"Chhetri’s participation in a series by the international football’s governing body is unique considering he represents a country that has not yet competed in the FIFA World Cup.",
         para4:"However, Chhetri’s goal scoring prowess has propelled him to stand alongside football’s greatest ever – Cristiano Ronaldo and Lionel Messi. The 37-year-old is currently the third-highest goal scorer in international football among active players. Ronaldo tops the list with 117 goals, and Chhetri is only six goals behind Messi’s 90 goal tally. During his distinguished career, Chhetri has played 131 games for the Indian squad and netted 84 goals.",
@@ -112,6 +109,7 @@ let datas2=[
         image_url:"",
         name:"On Lata’s birth anniversary, PM Modi hails crossing named after iconic singer in Ayodhya",
         mainPara:"Uttar Pradesh Chief Minister Yogi Adityanath will inaugurate a crossing named after Mangeshkar in the holy city of Ayodhya—believed to be the birthplace of Lord Ram. Called Lata Chowk, the crossing is being touted as a gift to her plethora of fans by the BJP-led Uttar Pradesh government",
+        linkPage:"./india.html",
         para2:"New Delhi: Prime Minister Narendra Modi on Wednesday paid tribute to iconic singer Lata Mangeshkar on her birth anniversary and said he was glad that a crossing was being named after her in the temple town of Ayodhya.",
         para3:"The prime minister shared a special relationship with the legendary singer and was one of the first to attend her funeral when she passed away on 6 February, 2022 after battling prolonged illness. Sharing a nostalgic tweet PM Modi said, “Remembering Lata Didi on her birth anniversary. There is so much that I recall…the innumerable interactions in which she would shower so much affection. I am glad that today, a Chowk in Ayodhya will be named after her. It is a fitting tribute to one of the greatest Indian icons.”",
         para4:"Uttar Pradesh Chief Minister Yogi Adityanath will inaugurate a crossing named after Mangeshkar in the holy city of Ayodhya—believed to be the birthplace of Lord Ram. Called Lata Chowk, the crossing is being touted as a gift to her plethora of fans by the BJP-led Uttar Pradesh government.",
@@ -124,6 +122,7 @@ let datas2=[
         image_url:"https://images.firstpost.com/wp-content/uploads/2022/09/Red_carpet_at_81st_Academy_Awards_in_Kodak_Theatre.jpg?impolicy=website&width=640&height=363",
         name:"And the Oscar doesn’t go to... Why is Russia boycotting the Academy Awards?",
         mainPara:"Amid growing tensions with Washington over the Ukraine war, Russia said it will not submit entries to the Oscars. This is the first time the country has boycotted the coveted film awards since the fall of the Soviet Union",
+        linkPage:"./explainer.html",
         para2:"Russia’s isolation from the world continues as the war in Ukraine reaches a critical point. Its ties with the United States, which has slapped the Kremlin with sanctions after strict sanctions since the February invasion, have plummeted. Now Russia has announced that it will not be submitting a film for the upcoming 2023 international Oscars race.",
         para3:"This is the first time that the country has boycotted the coveted film awards since the fall of the Soviet Union.",
         para4:"Let’s take a closer look.",
@@ -138,9 +137,9 @@ let datas2=[
 datas2.forEach(function (el){
     
     let card2 =document.createElement("div");
-    // card2.addEventListener("click", function(){
-    //     linkToPage(el);
-    // });
+    card2.addEventListener("click", function(){
+        linkToPage(el);
+    });
 
     let heading=document.createElement("h3");
     heading.innerText=el.name;
@@ -152,3 +151,8 @@ datas2.forEach(function (el){
     document.querySelector("#entertainment-right").append(card2);
     
 });
+
+function linkToPage(el){
+    // console.log(el.linkPage);
+    window.open(el.linkPage);
+}
