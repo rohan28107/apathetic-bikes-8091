@@ -16,16 +16,19 @@
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly ;
+    height: 50px;
 }
 #nav_one>a{
     width: 150px;
     height: 80%;
+    margin: 5px;
 }
 
-#nav_one>a~div img{
+#nav_one>div>a img{
     width: 30px;
-    height: 80%;
-    
+    height: 70%;
+    /* margin-left: -30px;
+    margin-bottom: 5px; */
 }
 #nav_one~div{
     text-align: center;
