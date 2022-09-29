@@ -1,0 +1,57 @@
+#mainAuto,#mainCricket,#mainSports,#mainEntertainment{
+    display: grid;
+    grid-template-columns: 650px 350px;
+    grid-template-rows: auto;
+    justify-content: center;
+    column-gap: 20px;
+}
+/* #mainAuto>div{
+    border: 1px solid red;  
+
+} */
+#mainAuto,#mainCricket,#mainSports,#mainEntertainment>div img{
+width: 100%;
+margin-top: 30px;
+}
+#auto-left,#cricket-left,#sports-left,#entertainment-left div>h1,p{
+margin: 20px;
+}
+#auto-left,#cricket-left,#sports-left,#entertainment-left div>p{
+    font-family: serif;
+    color: #525252;
+    font-size: large;
+}
+#auto-right,#cricket-right,#sports-right,#entertainment-right>div h3,p{
+    margin: 20px;
+}
+#mainAuto,#mainCricket,#mainSports,#mainEntertainment>div>h3{
+    margin: 20px;
+    margin-bottom: 5px;
+}
+/* #mainAuto h1:first-child{
+    /* text-align: center; */
+    /* text-decoration: underline; */
+    /* margin-bottom: -15px; 
+} */
+#cricket-right>div{
+  border: 1px solid grey;
+  width: auto;
+  padding: 10px;
+}
+#sports-right>div{
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px;
+}
+
+#auto-right>div{
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px;
+}
+
+#entertainment-right>div{
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px;
+}
