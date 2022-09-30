@@ -79,7 +79,7 @@ let datas = [
         "https://images.firstpost.com/wp-content/uploads/2022/09/Roger-Federer-12.jpg?impolicy=website&width=640&height=363",
         name:"Watch: Roger Federer confirms he will be there at 2023 Laver Cup",
         mainPara:"Roger Federer confirmed returning at the 2023 Laver Cup in Vancouver saying that 'next year will be again totally different'.",
-        linkPage:"sports.html",
+        linkPage:"sports2.html",
         para2:"Tennis legend Roger Federer had announced that the Laver Cup 2022 will be his final tournament. However, in his retirement speech, Federer said he will be returning to the 2023 Laver Cup in Vancouver even if it’s not as an athlete.",
         para3:"It wasn’t a picture-perfect ending for the 20-time Grand Slam champion as Team Europe’s renowned pair of Rafael Nadal and Federer lost against Team World’s Frances Tiafoe and Jack Sock. “Fedal” as the two are popularly known as were thumped 6-4, 6(2)-7, 9-11 in front of a packed O2 Arena in London.",
         para4:"As the match ended, Federer, his family, and fellow players burst into tears as they celebrated his fortuitous career. An extremely emotional Federer delivered one final speech as the fans cheered for him and gave him a standing ovation.",
@@ -228,3 +228,11 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }

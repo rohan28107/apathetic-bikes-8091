@@ -86,7 +86,6 @@ margin: 20px;
 #footer-main{
   display: flex;
   justify-content: center;  
-  
   width: 60%;
   margin: auto;
 }
@@ -149,8 +148,121 @@ margin: 20px;
     animation-duration: 3.5s;
   }
   
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: grey;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
   @keyframes fade {
     from {opacity: .7} 
     to {opacity: 1}
   }
-  
+
+
+  /* meidum screens */
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    #main{
+      grid-template-columns: 350px 200px;
+      grid-template-rows: auto;
+      column-gap: 10px;
+  }
+  .text {
+    font-size: 15px;
+    padding: 4px 8px;
+    bottom: 4px;
+    width: 80%;
+    background-color: #f2f2f2;
+  }
+  .dot {
+    height: 5px;
+    width: 15px;
+  }
+  #container div>p,h1{
+    font-size:14px;
+  }
+  #container-left>div h3,p{
+    font-size:14px;
+}
+#footer-main>div{
+  width: 15%;
+  margin-top: -10px;
+  /* margin-left: -30px; */
+}
+#footer-main h4{
+  font-size: medium;
+  margin-left: 12px;
+}
+
+
+  }
+
+  /* small screens */
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    #main{
+      grid-template-columns: 200px;
+      grid-template-rows: auto;
+      column-gap: 10px;
+  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .text {
+    font-size: 10px;
+    padding: 4px 8px;
+    bottom: 4px;
+    width: 80%;
+    background-color: #f2f2f2;
+  }
+  .dot {
+    height: 3px;
+    width: 10px;
+  }
+  #container div>p,h1{
+    font-size:10px;
+  }
+  #container-left>div h3,p{
+    font-size:10px;
+}
+#footer_one{
+   display: block;
+  justify-content: center ;
+  height: 70px;
+}
+#footer-main a{
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1px;
+}
+#footer-main h4{
+  font-size: 10px;
+  margin-left: 15px;
+}
+
+  }
