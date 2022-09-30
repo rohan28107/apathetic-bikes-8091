@@ -16,7 +16,9 @@ let cricketData=[
         para9:"Going by Rohit’s statement, it is likely that both Pant and Karthik will make it to the playing XI for the three-match T20I series against South Africa, which is scheduled to begin from 28 September.",
         para10:"Dinesh Karthik was picked for all three T20Is against Australia but did not get enough time to bat. He faced five balls in the first match at Mohali and scored six runs, while in the second T20I, he faced two balls and blasted a six and four to seal victory for India.",
         para11:"In the third match in Hyderabad, the 37-year-old from Tamil Nadu faced only 1 ball and remained not out with one run.",
-        para12:"Hence, Karthik is all but certain to retain his place in India’s playing XI for the T20I series against South Africa, but it will be his performance in the series which will decide if he’s fit to feature in India’s playing XI in the T20 World Cup."
+        para12:"Hence, Karthik is all but certain to retain his place in India’s playing XI for the T20I series against South Africa, but it will be his performance in the series which will decide if he’s fit to feature in India’s playing XI in the T20 World Cup.",
+        // twit:"https://twitter.com/BCCI/status/1573366197625683969?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1573366197625683969%7Ctwgr%5E0b7f3becf6b2f772081f1f4c75ae85023d6d29ae%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.firstpost.com%2Ffirstcricket%2Fsports-news%2Frishabh-pant-or-dinesh-karthik-india-vs-south-africa-t20is-likely-to-settle-the-wrangling-debate-11347191.html"
+    
     },
 ];
 
@@ -59,6 +61,10 @@ cricketData.forEach(function (el){
 
     let paras10=document.createElement("p");
     paras10.innerText=el.para10;
+    
+    // let twit=document.createElement("a");
+    // twit.innerText="link to twitter";
+    // twit.href=el.twit;
 
     let paras11=document.createElement("p");
     paras11.innerText=el.para11;
@@ -97,7 +103,7 @@ let datas2=[
         "https://images.firstpost.com/wp-content/uploads/2022/09/Sunil-Chhetri.jpg?impolicy=website&width=640&height=363",
         name:"FIFA releases 'Captain Fantastic' on Sunil Chhetri's untold story of tremendous feats",
         mainPara:"As a result of this exclusive series, Sunil Chhetri will unquestionably be the point of contact while discussing Indian football worldwide.",
-        linkPage:"",
+        linkPage:"./sports.html",
         para2:"Sunil Chhetri, Indian national football team captain’s, legacy has acquired new heights after FIFA created a special series about him in recognition of his fantastic career. The series named ‘Captain Fantastic’ is available on FIFA+ and it has three episodes.",
         para3:"Chhetri’s participation in a series by the international football’s governing body is unique considering he represents a country that has not yet competed in the FIFA World Cup.",
         para4:"However, Chhetri’s goal scoring prowess has propelled him to stand alongside football’s greatest ever – Cristiano Ronaldo and Lionel Messi. The 37-year-old is currently the third-highest goal scorer in international football among active players. Ronaldo tops the list with 117 goals, and Chhetri is only six goals behind Messi’s 90 goal tally. During his distinguished career, Chhetri has played 131 games for the Indian squad and netted 84 goals.",
@@ -106,14 +112,13 @@ let datas2=[
         para8:"The first episode of the series travels back to Chhetri’s early days as India’s talismanic captain. This fly-on-the-wall saga uncovers unseen tales of the captain, from his precocious pre-teen anguish to the early sparks of his romance with his future wife — all leading up to his India debut at the age of 20.",
         para9:"The second episode of the series follows Chhetri beginning to excel for the national team and gradually establishing himself as a mainstay.",
         para10:"Chhetri achieves the pinnacle of both his professional and personal life in the third episode of the show. As Chhetri’s fame and on-field performances rise, awards have mounted up and records have been broken.",
-        para11:"",
-        para12:""
     },
     {
         id:3,
         image_url:"",
         name:"On Lata’s birth anniversary, PM Modi hails crossing named after iconic singer in Ayodhya",
         mainPara:"Uttar Pradesh Chief Minister Yogi Adityanath will inaugurate a crossing named after Mangeshkar in the holy city of Ayodhya—believed to be the birthplace of Lord Ram. Called Lata Chowk, the crossing is being touted as a gift to her plethora of fans by the BJP-led Uttar Pradesh government",
+        linkPage:"./india.html",
         para2:"New Delhi: Prime Minister Narendra Modi on Wednesday paid tribute to iconic singer Lata Mangeshkar on her birth anniversary and said he was glad that a crossing was being named after her in the temple town of Ayodhya.",
         para3:"The prime minister shared a special relationship with the legendary singer and was one of the first to attend her funeral when she passed away on 6 February, 2022 after battling prolonged illness. Sharing a nostalgic tweet PM Modi said, “Remembering Lata Didi on her birth anniversary. There is so much that I recall…the innumerable interactions in which she would shower so much affection. I am glad that today, a Chowk in Ayodhya will be named after her. It is a fitting tribute to one of the greatest Indian icons.”",
         para4:"Uttar Pradesh Chief Minister Yogi Adityanath will inaugurate a crossing named after Mangeshkar in the holy city of Ayodhya—believed to be the birthplace of Lord Ram. Called Lata Chowk, the crossing is being touted as a gift to her plethora of fans by the BJP-led Uttar Pradesh government.",
@@ -126,6 +131,7 @@ let datas2=[
         image_url:"https://images.firstpost.com/wp-content/uploads/2022/09/Red_carpet_at_81st_Academy_Awards_in_Kodak_Theatre.jpg?impolicy=website&width=640&height=363",
         name:"And the Oscar doesn’t go to... Why is Russia boycotting the Academy Awards?",
         mainPara:"Amid growing tensions with Washington over the Ukraine war, Russia said it will not submit entries to the Oscars. This is the first time the country has boycotted the coveted film awards since the fall of the Soviet Union",
+        linkPage:"./explainer.html",
         para2:"Russia’s isolation from the world continues as the war in Ukraine reaches a critical point. Its ties with the United States, which has slapped the Kremlin with sanctions after strict sanctions since the February invasion, have plummeted. Now Russia has announced that it will not be submitting a film for the upcoming 2023 international Oscars race.",
         para3:"This is the first time that the country has boycotted the coveted film awards since the fall of the Soviet Union.",
         para4:"Let’s take a closer look.",
@@ -140,9 +146,9 @@ let datas2=[
 datas2.forEach(function (el){
     
     let card2 =document.createElement("div");
-    // card2.addEventListener("click", function(){
-    //     linkToPage(el);
-    // });
+    card2.addEventListener("click", function(){
+        linkToPage(el);
+    });
 
     let heading=document.createElement("h3");
     heading.innerText=el.name;
@@ -154,3 +160,8 @@ datas2.forEach(function (el){
     document.querySelector("#cricket-right").append(card2);
     
 });
+
+function linkToPage(el){
+    // console.log(el.linkPage);
+    window.open(el.linkPage);
+}

@@ -1,4 +1,4 @@
-#mainAuto,#mainCricket,#mainSports,#mainEntertainment{
+#mainAuto,#mainCricket,#mainSports,#mainEntertainment,#mainIndia,#mainExplainer{
     display: grid;
     grid-template-columns: 650px 350px;
     grid-template-rows: auto;
@@ -14,49 +14,66 @@
 #main>div img{
     width: 100%;
     margin-top: 30px;
-    }
+}
 #mainAuto>div img{
     width: 100%;
     margin-top: 30px;
-    }
-
+}
 #mainCricket>div img{
     width: 100%;
     margin-top: 30px;
-    }
-
+}
 #mainSports>div img{
     width: 100%;
     margin-top: 30px;
-    }
-
-#mainEntertainment>div img{
-width: 100%;
-margin-top: 30px;
 }
-#auto-left,#cricket-left,#sports-left,#entertainment-left div>h1,p{
+#mainIndia>div img{
+    width: 100%;
+    margin-top: 30px;
+}
+#mainEntertainment>div img{
+    width: 100%;
+    margin-top: 30px;
+}
+#mainExplainer>div img{
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+#auto-left,#cricket-left,#sports-left,#entertainment-left,#india-left,#explainer-left div>h1,p{
 margin: 20px;
 }
-#auto-left,#cricket-left,#sports-left,#entertainment-left div>p{
+#auto-left,#cricket-left,#sports-left,#entertainment-left,#india-left,#explainer-left div>p{
     font-family: serif;
     color: #525252;
     font-size: large;
 }
+/* #auto-left,#cricket-left,#sports-left,#entertainment-left,#india-left,#explainer-left div>h1{
+    color: black;
+} */
+
+
 #auto-right>div h3,p{
     margin: 20px;
 }
-
 #cricket-right>div h3,p{
     margin: 20px;
 }
-
 #sports-right>div h3,p{
     margin: 20px;
 }
-
+#india-right>div h3,p{
+    margin: 20px;
+}
 #entertainment-right>div h3,p{
     margin: 20px;
 }
+#explainer>div h3,p{
+    margin: 20px;
+}
+
+
 #mainAuto>div>h3{
     margin: 20px;
     margin-bottom: 5px;
@@ -76,6 +93,12 @@ margin: 20px;
     margin: 20px;
     margin-bottom: 5px;
 }
+#mainExplainer>div>h3{
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+
 #cricket-right>div{
   border: 1px solid grey;
   width: auto;
@@ -92,9 +115,88 @@ margin: 20px;
     width: auto;
     padding: 10px;
 }
-
+#india-right>div{
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px;
+}
 #entertainment-right>div{
     border: 1px solid grey;
     width: auto;
     padding: 10px;
 }
+#explainer-right>div{
+    border: 1px solid grey;
+    width: auto;
+    padding: 10px;
+}
+
+#footer>div:first-child{
+    display: flex;
+    width: 100%;
+    height: 30px;
+  }
+  #footer{
+    /* border: 1px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: auto;
+  }
+  #footer_one{
+    display: flex;
+    justify-content: space-around ;
+    height: 50px;
+  }
+  #footer_one a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center; 
+  } 
+  #footer_one>a{
+    width: 150px;
+    height: 80%;
+    margin: 5px;
+  }
+  
+  #footer_one>div>a img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  #footer_one~div{
+    text-align: center;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  #footer_one~div>a{
+    margin: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  #footer>hr:first-child{
+    height: 5px;
+    background-color: grey;
+  }
+  #footer-main{
+    display: flex;
+    justify-content: center;  
+    
+    width: 60%;
+    margin: auto;
+  }
+  #footer-main>div{
+    text-align: left;
+    width: 18%;
+    margin-top: -10px;
+    margin-left: -60px;
+  }
+  #footer-main>hr{
+    margin-top: -20px;
+  }
+  #footer-main a{
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #717171;
+    line-height: 2px;
+    text-decoration: none;
+  }
