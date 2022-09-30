@@ -1,20 +1,19 @@
 let sportsData=[
     {
-        id:3,
+        id:5,
         image_url:
-        "https://images.firstpost.com/wp-content/uploads/2022/09/Sunil-Chhetri.jpg?impolicy=website&width=640&height=363",
-        name:"FIFA releases 'Captain Fantastic' on Sunil Chhetri's untold story of tremendous feats",
-        mainPara:"As a result of this exclusive series, Sunil Chhetri will unquestionably be the point of contact while discussing Indian football worldwide.",
-        linkPage:"sports.html",
-        para2:"Sunil Chhetri, Indian national football team captain’s, legacy has acquired new heights after FIFA created a special series about him in recognition of his fantastic career. The series named ‘Captain Fantastic’ is available on FIFA+ and it has three episodes.",
-        para3:"Chhetri’s participation in a series by the international football’s governing body is unique considering he represents a country that has not yet competed in the FIFA World Cup.",
-        para4:"However, Chhetri’s goal scoring prowess has propelled him to stand alongside football’s greatest ever – Cristiano Ronaldo and Lionel Messi. The 37-year-old is currently the third-highest goal scorer in international football among active players. Ronaldo tops the list with 117 goals, and Chhetri is only six goals behind Messi’s 90 goal tally. During his distinguished career, Chhetri has played 131 games for the Indian squad and netted 84 goals.",
-        para5:"https://pbs.twimg.com/media/FdqXN1HWIAMJ3zE?format=jpg&name=small",
-        // para6:"https://twitter.com/FIFAWorldCup/status/1574746035297177600?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1574746035297177600%7Ctwgr%5E0f0d8cf98adc897cdda5bd1d42a284e0d213efc8%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.firstpost.com%2Fsports%2Ffootball-news%2Ffifa-releases-captain-fantastic-on-sunil-chhetris-untold-story-of-tremendous-feats-11346541.html",
-        para7:"FIFA+ is a content initiative by the global body and this series is a component of that project. As a result, Chhetri will unquestionably be the point of focus while discussing Indian football worldwide. Some of the scenes were filmed in Bangalore, where Chhetri currently resides, in addition to Delhi, where Chhetri’s parents live and where he grew up.",
-        para8:"The first episode of the series travels back to Chhetri’s early days as India’s talismanic captain. This fly-on-the-wall saga uncovers unseen tales of the captain, from his precocious pre-teen anguish to the early sparks of his romance with his future wife — all leading up to his India debut at the age of 20.",
-        para9:"The second episode of the series follows Chhetri beginning to excel for the national team and gradually establishing himself as a mainstay.",
-        para10:"Chhetri achieves the pinnacle of both his professional and personal life in the third episode of the show. As Chhetri’s fame and on-field performances rise, awards have mounted up and records have been broken.",
+        "https://images.firstpost.com/wp-content/uploads/2022/09/Roger-Federer-12.jpg?impolicy=website&width=640&height=363",
+        name:"Watch: Roger Federer confirms he will be there at 2023 Laver Cup",
+        mainPara:"Roger Federer confirmed returning at the 2023 Laver Cup in Vancouver saying that 'next year will be again totally different'.",
+        linkPage:"sports2.html",
+        para2:"Tennis legend Roger Federer had announced that the Laver Cup 2022 will be his final tournament. However, in his retirement speech, Federer said he will be returning to the 2023 Laver Cup in Vancouver even if it’s not as an athlete.",
+        para3:"It wasn’t a picture-perfect ending for the 20-time Grand Slam champion as Team Europe’s renowned pair of Rafael Nadal and Federer lost against Team World’s Frances Tiafoe and Jack Sock. “Fedal” as the two are popularly known as were thumped 6-4, 6(2)-7, 9-11 in front of a packed O2 Arena in London.",
+        para4:"As the match ended, Federer, his family, and fellow players burst into tears as they celebrated his fortuitous career. An extremely emotional Federer delivered one final speech as the fans cheered for him and gave him a standing ovation.",
+        para6:"“I had no speech ready, I can say congratulations obviously to Team World, and it’s been great, been a little bit emotional at times. I hope I didn’t make the team (Europe) lose but I had a wonderful time and I can’t thank you enough for that. I’d like to thank Bjorn, our captain. You’re the king, I love you,” Federer said in his speech.",
+        para7:"Despite not being an active player, the 41-year-old hinted at his return as he affirmed that he will be in Vancouver for the Laver Cup next year. “I’m looking forward to next year and supporting both teams, of course from different positions,” he added.",
+        para9:"Team World were not the favourites for the Laver Cup 2022 against a star-studded Team Europe who also boasted the “Big Four” – Federer, Nadal, Novak Djokovic, and Andy Murray.",
+        para10:"However, wins for Felix Auger-Aliassime and Jack Sock in Sunday’s opening doubles, and then an excellent straight sets victory for Auger-Aliassime against Djokovic turned the tides in favour of Team World. Tiafoe’s impeccable performance to beat the former Roland Garros finalist Stefanos Tsitsipas 1-6 7-6(11) 10-8 handed the visitors an emphatic victory at London’s O2 Arena.",
+        para11:"As Federer put out his last act as a professional tennis player, it will be interesting to see what cap he dons next. He promised his fellow athletes and the world that he will be back next, saying he would see them all on a “different type of tennis court” in the future.",
     },
 ];
 
@@ -64,8 +63,8 @@ sportsData.forEach(function (el){
     let paras12=document.createElement("p");
     paras12.innerText=el.para12;
 
-    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras5, paras7, paras8, paras9, paras10);
-    document.querySelector("#sports-left").append(card);
+    card.append(heading, mainParas, newsImg, paras2, paras3, paras4, paras6, paras7, paras9, paras10);
+    document.querySelector("#sports2-left").append(card);
       
 });
 
@@ -151,7 +150,7 @@ datas2.forEach(function (el){
     mainParas.innerText=el.mainPara;
 
     card2.append(heading, mainParas);
-    document.querySelector("#sports-right").append(card2);
+    document.querySelector("#sports2-right").append(card2);
     
 });
 
